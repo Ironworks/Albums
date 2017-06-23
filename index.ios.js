@@ -9,12 +9,16 @@ import React from 'react';
 
 //Knows how to take the output from a component and place it on the screen
 //provides default core components like images, text
-import { AppRegistry } from 'react-native';
-import Header from './src/components/header';
+import { AppRegistry, View } from 'react-native';
+import Header from './src/components/Header';
+import AlbumList from './src/components/AlbumList';
 
 //Create Component, uses jsx
 const App = () => (
-    <Header headerText={'bums!'} />
+  <View>
+    <Header headerText={'Albums!'} />
+    <AlbumList />
+  </View>
 );
 
 //Render it to the device
